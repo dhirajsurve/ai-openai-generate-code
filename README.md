@@ -3,7 +3,7 @@
 This project contains a web service that will accept HTTP GET requests at
 `http://localhost:8080/ai/simple`.
 
-There is optional `message` parameter whose default value is "Write program to add 2 numbs ".
+There is optional `message` parameter whose default value is "Write program to add 2 numbers ".
 
 The response to the request is from the OpenAI ChatGPT Service
 and it will extract code from the repsonse and save it to new file 
@@ -32,7 +32,7 @@ you can add in springboot app setting
 
 ## Access the endpoint
 
-To get a response to the default request of "Tell me a joke"
+To get a response to the default request of "Write program to add 2 numbers"
 
 ```shell 
 curl http://localhost:8080/ai/simple
@@ -50,7 +50,7 @@ Because they make up everything!
 
 Now using the `message` request parameter
 ```shell
-curl --get  --data-urlencode 'message=Tell me a joke about a cow.' http://localhost:8080/ai/simple 
+curl --get  --data-urlencode 'message=Write program to add 2 numbers.' http://localhost:8080/ai/simple 
 ```
 
 A sample response is
