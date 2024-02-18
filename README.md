@@ -40,13 +40,19 @@ curl http://localhost:8080/ai/simple
 
 A sample response is 
 
-```text
-Sure, here's a classic one for you:
+``` Here's a simple Java code to add two numbers together:
 
-Why don't scientists trust atoms?
-
-Because they make up everything!
-```
+```java
+public class AddTwoNumbers {
+    public static void main(String[] args) {
+        int num1 = 5;
+        int num2 = 10;
+        
+        int sum = num1 + num2;
+        
+        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
+    }
+}
 
 Now using the `message` request parameter
 ```shell
@@ -55,10 +61,20 @@ curl --get  --data-urlencode 'message=Write program to add 2 numbers.' http://lo
 
 A sample response is
 
-```text
-Why did the cow go to space?
+```
+Here's a simple Java code to add two numbers together:
 
-Because it wanted to see the mooooon!
+```java
+public class AddTwoNumbers {
+    public static void main(String[] args) {
+        int num1 = 5;
+        int num2 = 10;
+        
+        int sum = num1 + num2;
+        
+        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
+    }
+}
 ```
 
 Alternatively use the `httpie` clinet
