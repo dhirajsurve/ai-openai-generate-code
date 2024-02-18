@@ -40,19 +40,14 @@ curl http://localhost:8080/ai/simple
 
 A sample response is 
 
-``` Here's a simple Java code to add two numbers together:
 
 ```java
-public class AddTwoNumbers {
+public class HelloWorld {
     public static void main(String[] args) {
-        int num1 = 5;
-        int num2 = 10;
-        
-        int sum = num1 + num2;
-        
-        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
+        System.out.println("Hello, World!");
     }
 }
+```
 
 Now using the `message` request parameter
 ```shell
